@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de Vente de Produits</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Ajoutez un fichier CSS externe pour les styles --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="contacts">
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="Pharma.png" alt="Logo de l'entreprise">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="Accueille.html">Accueil</a></li>
+        <li><a href="intfournisseur.html">Fournisseurs</a></li>
+        <li><a href="Apropos.html">À propos</a></li>
+        <li><a href="contacts">contacts<a></a>
+        </a></li>  
+      </ul>
+    </nav>
+    <form action="#" method="get" class="search-form">
+      <input type="text" name="search" placeholder="Rechercher...">
+      <button type="submit">Rechercher</button>
+    </form>
+  </header>
+
+  <div class="container">
+    <h1>Nos Produits</h1>
+    <div class="products">
+      <!-- Produit 1 -->
+      <div class="product">
+        <img src="aspirine.jpeg" alt="medicament1">
+        <h2>aspirine</h2>
+        <p>Prix : 1000 FCFA</p>
+        <button class="btn-commander"><a href="panier.html">Ajouter au panier</a></button>
+      </div>
+      <!-- Produit 2 -->
+      <div class="product">
+        <img src="febrilex.avif" alt="medicament 2">
+        <h2>febrilex</h2>
+        <p>Prix : 1500 FCFA</p>
+        <button class="btn-commander"><a href="panier.html">Ajouter au panier</a></button>
+      </div>
+      <!-- Ajoutez d'autres produits ici -->
+      <div class="product">
+        <img src="ibubrofene.jpeg" alt="medicament 3">
+        <h2>ibubrofene</h2>
+        <p>Prix : 2000 FCFA</p>
+        <button class="btn-commander"><a href="formulaire.html">Ajouter au panier</a></button>
+    </div>
+    <div class="product">
+      <img src="paracetamol.jpeg" alt="medicament 4">
+      <h2>paracetamol</h2>
+      <button class="btn-commander"><a href="formulaire.html">Ajouter au panier</a></button>
+  </div>
+  <div class="product">
+    <img src="tracedol.jpeg" alt="medicament 5">
+    <h2>tracedol</h2>
+    <p>Prix : 2000 FCFA</p>
+    <button class="btn-commander"><a href="formulaire.html">Ajouter au panier</a></button>
+</div>
+<div class="product">
+  <img src="colgate.jpeg" alt="medicament 6">
+  <h2>colgate</h2>
+  <p>Prix : 700 FCFA</p>
+  <button class="btn-commander"><a href="formulaire.html">Ajouter au panier</a></button>
+</div>
+<div class="product">
+  <img src="Apple-iMac-2020-27-pouces.jpg" alt="medicament 7">
+  <h2>Produit 7</h2>
+  <p>Description du produit 2...</p>
+  <p>Prix : $XX.XX</p>
+  <button class="btn-commander"><a href="formulaire.html">Ajouter au panier</a></button>
+</div>
+
+</body>
+</html>
+
+
+<style>
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+  /* Style du bouton Commander */
+.btn-commander:hover {
+  background-color: #0b8622;
+  color: #f4f4f4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-commander:hover {
+  background-color: #b46317;
+}
+
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #fdfdfd;
+  color: #128612;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #118415;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header ul li a:hover {
+  color: #149425;
+}
+
+/* Product section styles */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product {
+  width: 220px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+.product p:last-child {
+  font-weight: bold;
+}
+
+/* Form styles */
+.form {
+  margin-top: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: #117425;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+/* Header styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a6f23; /* Couleur de fond du header */
+  color: #fff; /* Couleur du texte du header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav ul li {
+  margin-right: 20px;
+}
+
+.main-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Couleur du texte des liens du header */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #0f8025; /* Couleur du texte des liens du header au survol */
+}
+</style>

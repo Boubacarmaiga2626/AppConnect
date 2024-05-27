@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cart-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.cart-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.item-image {
+    width: 80px
+}
+</style>
+<body>
+    <div class="cart-container">
+        <h1>Votre Panier</h1>
+        <div class="cart-item">
+            <img src="item1.jpg" alt="Item 1" class="item-image">
+            <div class="item-details">
+                <h2>Nom de l'article</h2>
+                <p>Description de l'article</p>
+                <div class="item-quantity">
+                    <label for="quantity1">Quantité:</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                </div>
+                <div class="item-price">$20.00</div>
+            </div>
+            <button class="remove-button">Retirer</button>
+        </div>
+        <div class="cart-item">
+            <img src="item2.jpg" alt="Item 2" class="item-image">
+            <div class="item-details">
+                <h2>Nom de l'article 2</h2>
+                <p>Description de l'article 2</p>
+                <div class="item-quantity">
+                    <label for="quantity2">Quantité:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                </div>
+                <div class="item-price">$15.00</div>
+            </div>
+            <button class="remove-button">Retirer</button>
+        </div>
+        <div class="cart-total">
+            <h2>Total: $35.00</h2>
+        </div>
+        <button class="checkout-button">Passer à la caisse</button>
+    </div>
+</body>
+</html>
